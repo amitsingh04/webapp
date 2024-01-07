@@ -47,7 +47,7 @@ Clone and copy the location to directory /var/www.
 </VirtualHost>
 ```
 If using virtual environment modify the /etc/apache2/mods-available/wsgi.conf value for WSGIPythonPath
-
+```bash
 WSGIPythonPath /var/www/webapp:/var/www/webapp/venv:/var/www/webapp/venv/lib/python3.10/site-packages
-
+```
 Note: In this case I'm using python version 3.10 but it can be different in your case.
