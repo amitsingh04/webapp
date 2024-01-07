@@ -26,5 +26,8 @@ def blockip():
         return render_template('opresult.html',result=result)
     else:
         return render_template('index.html')
+if __name__== "__main__":
+    app = Flask(__name__)
+    app.run()
 
 
