@@ -12,7 +12,7 @@ Install required packages
 pip install -r requirements.txt
 
 Note the requirement file is in the project.
-'''
+
 
 ## Apache Configuration on ubuntu or debian
 ### Apache and mod wsgi Installation
