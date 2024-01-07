@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h3>{% block title %}Please find Operation Result Below {% endblock %}</h3>
+{% endblock %}
+{% block content %}
+<h2>{{ result }}</h2>
+<div class="returnbutton">
+<a href="{{ url_for('index') }}" >Return</a>
+</div>
+{% endblock %}

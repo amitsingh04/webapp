@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h3>{% block title %}Welcome! fill in the details to block IP {% endblock %}</h3>
+{% endblock %}
+
+{% block content %}
+  <form method="POST" class="form" action="{{ url_for('blockip') }}">
+    <label for="ipaddress">IP Address</label>
+    <input type="text" name="ipaddress" id="ipaddress" placeholder="127.0.0.1" required>
+    <label  class="chkbox">Block On ASA
+    <input type="checkbox" name="asa" value="asa">
+    <span class="checkmark"></span>
+    </label>
+    <label class="chkbox">Block On Checkpoint
+    <input type="checkbox" name="checkpoint" value="checkpoint">
+    <span class="checkmark"></span>
+    </label>
+    <label class="chkbox">Block On IPS
+    <input type="checkbox" name="ips" value="ips">
+    <span class="checkmark"></span>
+    </label>
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}
